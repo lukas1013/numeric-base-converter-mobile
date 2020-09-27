@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "NB Converter",
+    "slug": "nbc",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#141314"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "primaryColor": "#141314",
+    "android": {
+   	"package": "com.luk.nbc",
+   	"versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}

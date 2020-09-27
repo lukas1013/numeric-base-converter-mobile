@@ -1,0 +1,21 @@
+apply plugin 'com.android.application';
+
+def enableProguardInReleaseBuilds = true
+def enableSeparateBuildPerCPUArchitecture = true
+
+android {
+    compileSdkVersion: 28
+    defaultConfig {
+        applicationId 'com.luk.nbc'
+    
+        targetSdkVersion 27
+    }
+  
+    buildTypes {
+        release {
+          minifyEnabled true
+          shrinkResources true
+          proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
